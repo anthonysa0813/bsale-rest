@@ -1,19 +1,21 @@
 const express = require("express");
 const pool = require("../database/config");
+var cors = require("cors");
 
 class Server {
   constructor() {
     this.app = express();
-    this.PORT = process.env.PORT || 5050;
-    this.connectDB();
+    this.PORT = 5050;
+    // this.connectDB();
     this.paths = {
       products: "/api/products",
       category: "/api/category",
     };
+    this.middlewares();
+    this.routes();
   }
-  async connectDB() {
-    const products = await pool.query("SELECT * FROM category");
-    console.log("products", products);
+  middlewares() {
+    this.app.use(cors());
   }
 
   routes() {
