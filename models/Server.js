@@ -5,7 +5,7 @@ var cors = require("cors");
 class Server {
   constructor() {
     this.app = express();
-    this.PORT = 5050;
+    this.PORT = 3306;
     // this.connectDB();
     this.paths = {
       products: "/api/products",
