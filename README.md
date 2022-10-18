@@ -29,3 +29,7 @@ https://teal-meerkat-cb51b8.netlify.app/
 
 - cliente: https://github.com/anthonysa0813/bsale-client-store
 - Servidor: https://github.com/anthonysa0813/bsale-rest
+
+## Documentación en Postman (Acerca de como usar las rutas a nivel del servidor)
+
+- https://documenter.getpostman.com/view/9252275/2s847HNY3V
